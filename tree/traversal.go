@@ -1,5 +1,7 @@
 package tree
 
+import "fmt"
+
 func (node *Node) Travserse() {
 	if node == nil {
 		return
@@ -15,4 +17,20 @@ func Travserse(node *Node) {
 		node.Print()
 		Travserse(node.Right)
 	}
+}
+
+func (node *Node) Traverse() {
+	node.TraverseFunc(func(n *Node) {
+		n.Print()
+	})
+	fmt.Println()
+}
+
+func (node *Node) TraverseFunc(f func(*Node)) {
+	if node == nil {
+		return
+	}
+	node.Left.TraverseFunc(f)
+	f(node)
+	node.Right.TraverseFunc(f)
 }

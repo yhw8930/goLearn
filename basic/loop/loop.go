@@ -62,5 +62,5 @@ func main() {
 	printFileContents(strings.NewReader(s))
 
 	// Uncomment to see it runs forever
-	forever()
+	//forever()
 }
