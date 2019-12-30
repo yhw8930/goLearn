@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"time"
 
 	"golang.org/x/text/encoding/unicode"
 
@@ -14,6 +15,8 @@ import (
 	"golang.org/x/text/transform"
 )
 
+var rateLimiter = time.Tick(100 * time.Millisecond) //限速
+
 //根据网页链接获取到网页内容
 func Fetch(url string) ([]byte, error) {
 	/*resp, err := http.Get(url)
@@ -21,6 +24,8 @@ func Fetch(url string) ([]byte, error) {
 		panic(err)
 	}
 	defer resp.Body.Close()*/
+	<-rateLimiter
+
 	client := http.Client{}
 	request, err := http.NewRequest("GET", url, nil)
 	if err != nil {

@@ -1,7 +1,6 @@
 package parser
 
 import (
-	"fmt"
 	"goLearn/crawler/engine"
 	"goLearn/crawler/model"
 	"regexp"
@@ -17,7 +16,6 @@ var residenceRe = regexp.MustCompile(`<div class="m-btn pink" data-v-8b1eac0c>�
 var houseRe = regexp.MustCompile(`<div class="m-btn purple" data-v-8b1eac0c>工作地:([^<]+)</div>`)
 
 func ParseProfile(contents []byte, name string) engine.ParseResult {
-	fmt.Println("ParseProfile is going on!")
 	profile := model.Profile{}
 	profile.Name = name
 	age, err := strconv.Atoi(extractString(contents, ageRe))
