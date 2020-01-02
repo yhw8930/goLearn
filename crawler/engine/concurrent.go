@@ -3,7 +3,7 @@ package engine
 type ConcurrentEngine struct {
 	Scheduler   Scheduler
 	WorkerCount int
-	ItemChan    chan interface{}
+	ItemChan    chan Item
 }
 
 type Scheduler interface {
@@ -25,7 +25,6 @@ func (e *ConcurrentEngine) Run(seeds ...Request) {
 	for _, r := range seeds {
 		e.Scheduler.Submit(r)
 	}
-	m := make(map[string]int)
 
 	for {
 		//chan传输的值 out必须有值 循环才可以正常运作 out的值从createWorker中获取
@@ -34,7 +33,7 @@ func (e *ConcurrentEngine) Run(seeds ...Request) {
 			go func() { e.ItemChan <- item }()
 		}
 		for _, request := range result.Requests {
-			if isDuplicate(request.Url, m) {
+			if isDuplicate(request.Url) {
 				continue
 			}
 			//将新的地址传入函数 在函数内的结构体进行in值的改变
@@ -60,12 +59,12 @@ func createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier) {
 	}()
 }
 
-func isDuplicate(url string, m map[string]int) bool {
-	if m[url] > 0 {
-		return true
-	} else {
-		m[url]++
+var visitedUrls = make(map[string]bool)
 
+func isDuplicate(url string) bool {
+	if visitedUrls[url] {
+		return true
 	}
+	visitedUrls[url] = true
 	return false
 }

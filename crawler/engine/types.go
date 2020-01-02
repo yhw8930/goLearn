@@ -1,13 +1,24 @@
 package engine
 
-//请求数据结构
+type ParserFunc func(contents []byte, url string) ParseResult
+
 type Request struct {
-	Url        string                   //请求url
-	ParserFunc func([]byte) ParseResult //内容解析函数
+	Url        string
+	ParserFunc ParserFunc
 }
 
-//经过内容解析函数解析后的返回数据结构体
 type ParseResult struct {
-	Requests []Request     //请求数据结构切片
-	Items    []interface{} //抓取到的有用信息项
+	Requests []Request
+	Items    []Item
+}
+
+type Item struct {
+	Url     string
+	Id      string
+	Type    string
+	Payload interface{}
+}
+
+func NilParser([]byte) ParseResult {
+	return ParseResult{}
 }

@@ -1,6 +1,7 @@
 package parser
 
 import (
+	"goLearn/crawler/engine"
 	"goLearn/crawler/model"
 	"io/ioutil"
 	"testing"
@@ -11,21 +12,27 @@ func TestParseProfile(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
-	result := ParseProfile(contents, "xsd")
+	result := ParseProfile(contents, "http://album.zhenai.com/u/1794937843", "雪花")
 	if len(result.Items) != 1 {
 		t.Errorf("Items should contain 1 element; but was %v", result.Items)
 	}
-	profile := result.Items[0].(model.Profile)
-	expexted := model.Profile{
-		Name:      "",
-		Age:       0,
-		Height:    0,
-		Weight:    0,
-		Income:    "",
-		Residence: "",
-		House:     "",
+	actual := result.Items[0]
+	expected := engine.Item{
+		Url:  "http://album.zhenai.com/u/1794937843",
+		Type: "zhenai",
+		Id:   "1794937843",
+		Payload: model.Profile{
+			Name:      "雪花",
+			Age:       26,
+			Height:    161,
+			Weight:    53,
+			Income:    "8千-1.2万",
+			Residence: "湖北武汉",
+			House:     "武汉武昌区",
+		},
 	}
-	if profile != expexted {
-		t.Errorf("%v==%v", profile, expexted)
+
+	if actual != expected {
+		t.Errorf("%v==%v", actual, expected)
 	}
 }

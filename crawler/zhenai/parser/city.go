@@ -9,16 +9,13 @@ var cityRe = regexp.MustCompile(`<a href="(http://album.zhenai.com/u/[0-9]+)" [^
 var cityUrlRe = regexp.MustCompile(`href="(http://www.zhenai.com/zhenghun/changsha/[^"]+)"`)
 
 //城市解析器
-func ParseCity(contents []byte) engine.ParseResult {
+func ParseCity(contents []byte, _ string) engine.ParseResult {
 	matches := cityRe.FindAllSubmatch(contents, -1)
 	result := engine.ParseResult{}
 	for _, m := range matches {
-		name := string(m[2])
 		result.Requests = append(result.Requests, engine.Request{
-			Url: string(m[1]),
-			ParserFunc: func(bytes []byte) engine.ParseResult {
-				return ParseProfile(bytes, name)
-			},
+			Url:        string(m[1]),
+			ParserFunc: ProfileParser(string(m[2])),
 		})
 	}
 
@@ -31,4 +28,10 @@ func ParseCity(contents []byte) engine.ParseResult {
 	}
 
 	return result
+}
+
+func ProfileParser(name string) engine.ParserFunc {
+	return func(bytes []byte, url string) engine.ParseResult {
+		return ParseProfile(bytes, url, name)
+	}
 }
