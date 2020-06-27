@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gin.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/pic/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gin/router_url/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gin/router_url/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gin/start/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gin/start/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1323,10 +1317,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="450" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1591002080170" />
-    <state x="294" y="77" key="CommitChangelistDialog2" timestamp="1593239390063">
+    <state x="294" y="77" key="CommitChangelistDialog2" timestamp="1593239403078">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="294" y="77" key="CommitChangelistDialog2/-1196.0.1196.896/0.0.1680.1050@0.0.1680.1050" timestamp="1593239390063" />
+    <state x="294" y="77" key="CommitChangelistDialog2/-1196.0.1196.896/0.0.1680.1050@0.0.1680.1050" timestamp="1593239403078" />
     <state x="242" y="94" key="DiffContextDialog" timestamp="1593239383293">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -1347,6 +1341,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1628" height="220" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592038115523" />
+    <state x="340" y="202" key="Vcs.Push.Dialog.v2" timestamp="1593239580316">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="340" y="202" key="Vcs.Push.Dialog.v2/-1196.0.1196.896/0.0.1680.1050@0.0.1680.1050" timestamp="1593239580316" />
     <state x="455" y="280" key="git4idea.merge.GitPullDialog" timestamp="1593239301480">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
