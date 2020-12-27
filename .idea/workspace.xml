@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/consts/time_format.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stdlib/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stdlib/strconv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stdlib/test.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stdlib/test2.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stdlib/time.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter1/lissajous.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter1/lissajous.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goroutine/goroutine.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +55,7 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1215,25 +1224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build goLearn/gin/start">
-    <configuration name="go build goLearn/gin/router_type" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goLearn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/gin/router_type/main.go" />
-      <package value="goLearn/gin/router_type" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build goLearn/gin/router_url" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goLearn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/gin/router_url/main.go" />
-      <package value="goLearn/gin/router_url" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build goLearn/stdlib (1)">
     <configuration name="go build goLearn/gin/start" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -1243,30 +1234,49 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/test/pic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goLearn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/test/pic/main.go" />
-      <package value="goLearn/test/pic" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/stdlib (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/gin/other_autotis/main.go" />
+      <filePath value="$PROJECT_DIR$/stdlib/file.go" />
+      <package value="goLearn/stdlib" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/stdlib" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/stdlib/strconv.go" />
+      <package value="goLearn/stdlib" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test/test.go" />
+      <package value="goLearn/test" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/time" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/time/time.go" />
+      <package value="goLearn/time" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build goLearn/stdlib (1)" />
+        <item itemvalue="Go Build.go build goLearn/stdlib" />
+        <item itemvalue="Go Build.go build goLearn/test" />
+        <item itemvalue="Go Build.go build goLearn/time" />
         <item itemvalue="Go Build.go build goLearn/gin/start" />
-        <item itemvalue="Go Build.go build goLearn/gin/router_url" />
-        <item itemvalue="Go Build.go build goLearn/gin/router_type" />
-        <item itemvalue="Go Build.go build goLearn/test/pic" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -1306,49 +1316,54 @@
     <MESSAGE value="并发爬虫" />
     <MESSAGE value="go mod版本" />
     <MESSAGE value="go gin study" />
-    <option name="LAST_COMMIT_MESSAGE" value="go gin study" />
+    <MESSAGE value="gin study" />
+    <option name="LAST_COMMIT_MESSAGE" value="gin study" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>https://goproxy.cn,direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="450" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591002080170">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="324" y="-883" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609074186690">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="450" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1591002080170" />
-    <state x="294" y="77" key="CommitChangelistDialog2" timestamp="1593239403078">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="324" y="-883" key="#com.intellij.execution.impl.EditConfigurationsDialog/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609074186690" />
+    <state x="447" y="-746" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609077854014">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="294" y="77" key="CommitChangelistDialog2/-1196.0.1196.896/0.0.1680.1050@0.0.1680.1050" timestamp="1593239403078" />
-    <state x="242" y="94" key="DiffContextDialog" timestamp="1593239383293">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="447" y="-746" key="#com.intellij.fileTypes.FileTypeChooser/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609077854014" />
+    <state x="525" y="-972" key="#go_build_goLearn/stdlib" timestamp="1609076284261">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="242" y="94" key="DiffContextDialog/-1196.0.1196.896/0.0.1680.1050@0.0.1680.1050" timestamp="1593239383293" />
-    <state width="1628" height="220" key="GridCell.Tab.0.bottom" timestamp="1592038115524">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="525" y="-972" key="#go_build_goLearn/stdlib/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609076284261" />
+    <state x="525" y="-972" key="#go_build_goLearn/stdlib_(1)" timestamp="1609078222499">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1628" height="220" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1592038115524" />
-    <state width="1628" height="220" key="GridCell.Tab.0.center" timestamp="1592038115523">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="525" y="-972" key="#go_build_goLearn/stdlib_(1)/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609078222499" />
+    <state x="525" y="-972" key="#go_build_goLearn/test" timestamp="1609075696877">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1628" height="220" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1592038115523" />
-    <state width="1628" height="220" key="GridCell.Tab.0.left" timestamp="1592038115522">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="525" y="-972" key="#go_build_goLearn/test/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609075696877" />
+    <state x="314" y="-1004" key="CommitChangelistDialog2" timestamp="1609085848933">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1628" height="220" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1592038115522" />
-    <state width="1628" height="220" key="GridCell.Tab.0.right" timestamp="1592038115523">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="314" y="-1004" key="CommitChangelistDialog2/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609085848933" />
+    <state width="1865" height="227" key="GridCell.Tab.0.bottom" timestamp="1609084168414">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1628" height="220" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1592038115523" />
-    <state x="340" y="202" key="Vcs.Push.Dialog.v2" timestamp="1593239580316">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1865" height="227" key="GridCell.Tab.0.bottom/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168414" />
+    <state width="1865" height="227" key="GridCell.Tab.0.center" timestamp="1609084168412">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="340" y="202" key="Vcs.Push.Dialog.v2/-1196.0.1196.896/0.0.1680.1050@0.0.1680.1050" timestamp="1593239580316" />
-    <state x="455" y="280" key="git4idea.merge.GitPullDialog" timestamp="1593239301480">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1865" height="227" key="GridCell.Tab.0.center/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168412" />
+    <state width="1865" height="227" key="GridCell.Tab.0.left" timestamp="1609084168412">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="455" y="280" key="git4idea.merge.GitPullDialog/-1196.0.1196.896/0.0.1680.1050@0.0.1680.1050" timestamp="1593239301480" />
+    <state width="1865" height="227" key="GridCell.Tab.0.left/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168412" />
+    <state width="1865" height="227" key="GridCell.Tab.0.right" timestamp="1609084168413">
+      <screen x="-100" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="227" key="GridCell.Tab.0.right/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168413" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
