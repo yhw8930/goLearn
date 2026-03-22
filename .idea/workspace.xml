@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consts/time_format.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stdlib/file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stdlib/strconv.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stdlib/test.text" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stdlib/test2.text" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stdlib/time.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/go.imports.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trae/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trae/sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trae/sorting.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter1/lissajous.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter1/lissajous.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goroutine/goroutine.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,42 +21,68 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="Go File" />
         <option value="Go Application" />
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yhw8930&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:yhw8930/goLearn.git&quot;,
+    &quot;accountId&quot;: &quot;4da4f1dd-8055-4536-b34e-a9af627dfee7&quot;
+  }
+}</component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="1U0oji4C3ieqsvMnqfZjSl1Ujnf" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="GO_FMT" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go Application",
+    "Go Build.go build goLearn/test (1).executor": "Run",
+    "Go Build.go build goLearn/trae.executor": "Run",
+    "Go 构建.go build goLearn/test (1).executor": "Run",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/yhw",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gin/router_static" />
@@ -1224,59 +1250,75 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build goLearn/stdlib (1)">
-    <configuration name="go build goLearn/gin/start" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goLearn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/gin/start/main.go" />
-      <package value="goLearn/gin/start" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="GoApplicationRunConfiguration" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="GoApplicationRunConfiguration">
+          <value>
+            <map>
+              <entry key="go build goLearn/test (1)" value="STOPPED" />
+              <entry key="go build goLearn/trae" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build goLearn/trae">
     <configuration name="go build goLearn/stdlib (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/stdlib/file.go" />
       <package value="goLearn/stdlib" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/stdlib/file.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/stdlib" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/test (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/stdlib/strconv.go" />
-      <package value="goLearn/stdlib" />
-      <directory value="$PROJECT_DIR$/" />
+      <package value="goLearn/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/test/qq.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build goLearn/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/test/test.go" />
       <package value="goLearn/test" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/test/test.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build goLearn/time" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/time/time.go" />
       <package value="goLearn/time" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/time/time.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/trae" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/trae" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/trae/sort.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build goLearn/stdlib (1)" />
-        <item itemvalue="Go Build.go build goLearn/stdlib" />
-        <item itemvalue="Go Build.go build goLearn/test" />
-        <item itemvalue="Go Build.go build goLearn/time" />
-        <item itemvalue="Go Build.go build goLearn/gin/start" />
+        <item itemvalue="Go Build.go build goLearn/trae" />
+        <item itemvalue="Go Build.go build goLearn/test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1292,17 +1334,32 @@
       </list>
     </option>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-72a9cf600ed8-dfa3e7267ae0-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-253.31033.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-GO-253.31033.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <created>1773863453675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773863453675</updated>
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -1318,52 +1375,6 @@
     <MESSAGE value="go gin study" />
     <MESSAGE value="gin study" />
     <option name="LAST_COMMIT_MESSAGE" value="gin study" />
-  </component>
-  <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
-    <proxy>https://goproxy.cn,direct</proxy>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="324" y="-883" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609074186690">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="324" y="-883" key="#com.intellij.execution.impl.EditConfigurationsDialog/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609074186690" />
-    <state x="447" y="-746" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609077854014">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="447" y="-746" key="#com.intellij.fileTypes.FileTypeChooser/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609077854014" />
-    <state x="525" y="-972" key="#go_build_goLearn/stdlib" timestamp="1609076284261">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="525" y="-972" key="#go_build_goLearn/stdlib/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609076284261" />
-    <state x="525" y="-972" key="#go_build_goLearn/stdlib_(1)" timestamp="1609078222499">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="525" y="-972" key="#go_build_goLearn/stdlib_(1)/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609078222499" />
-    <state x="525" y="-972" key="#go_build_goLearn/test" timestamp="1609075696877">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="525" y="-972" key="#go_build_goLearn/test/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609075696877" />
-    <state x="314" y="-1004" key="CommitChangelistDialog2" timestamp="1609085848933">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="314" y="-1004" key="CommitChangelistDialog2/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609085848933" />
-    <state width="1865" height="227" key="GridCell.Tab.0.bottom" timestamp="1609084168414">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1865" height="227" key="GridCell.Tab.0.bottom/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168414" />
-    <state width="1865" height="227" key="GridCell.Tab.0.center" timestamp="1609084168412">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1865" height="227" key="GridCell.Tab.0.center/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168412" />
-    <state width="1865" height="227" key="GridCell.Tab.0.left" timestamp="1609084168412">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1865" height="227" key="GridCell.Tab.0.left/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168412" />
-    <state width="1865" height="227" key="GridCell.Tab.0.right" timestamp="1609084168413">
-      <screen x="-100" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1865" height="227" key="GridCell.Tab.0.right/-100.-1080.1920.1080/0.0.1680.1050@-100.-1080.1920.1080" timestamp="1609084168413" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
