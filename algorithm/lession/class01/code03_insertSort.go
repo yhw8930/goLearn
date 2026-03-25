@@ -6,7 +6,6 @@ func main() {
 	arr := []int{64, 34, 25, 12, 22, 11, 90}
 	insertSort(arr)
 	fmt.Println(arr)
-
 }
 
 // insertSort 插入排序
