@@ -7,28 +7,36 @@ import (
 	"time"
 )
 
-// 选择排序核心逻辑
+// SelectionSort 选择排序
+//
+// 思路:
+// 首先在未排序序列中找到最小（或最大）元素，存放到排序序列的起始位置，
+// 然后再从剩余未排序元素中继续寻找最小（或最大）元素，然后放到已排序序列的末尾。
+//
+// 复杂度分析:
+// - 时间复杂度: O(n²)。选择排序的性能与输入数据无关。
+// - 空间复杂度: O(1)。这是一个原地排序算法。
+// - 稳定性: 不稳定。在交换过程中，相等元素的相对位置可能会改变。
 func selectionSort(arr []int) {
 	if arr == nil || len(arr) < 2 {
 		return
 	}
-	// 0~n-1 找最小值放0位置，1~n-1找最小值放1位置...
 	for i := 0; i < len(arr)-1; i++ {
 		minIndex := i
-		// 从i+1到末尾找最小值的下标
 		for j := i + 1; j < len(arr); j++ {
 			if arr[j] < arr[minIndex] {
 				minIndex = j
 			}
 		}
-		// 交换当前i位置和最小值位置的元素
-		swap(arr, i, minIndex)
+		if i != minIndex {
+			swap(arr, i, minIndex)
+		}
 	}
 }
 
 // 交换切片中两个位置的元素
 func swap(arr []int, i, j int) {
-	arr[i], arr[j] = arr[j], arr[i] // Go 支持直接交换，无需临时变量
+	arr[i], arr[j] = arr[j], arr[i] // i==j, err. invalid memory address or nil pointer dereference
 }
 
 // 对比函数：用Go内置排序作为基准

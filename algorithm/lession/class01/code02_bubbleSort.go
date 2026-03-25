@@ -4,18 +4,30 @@ import (
 	"fmt"
 )
 
-// 冒泡排序核心逻辑（完全对齐Java版）
+// BubbleSort 冒泡排序
+//
+// 思路:
+// 重复地遍历要排序的数列，一次比较两个元素，如果它们的顺序错误就把它们交换过来。
+// 遍历数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。
+//
+// 复杂度分析:
+// - 时间复杂度: O(n²)。在最好的情况下（数组已经排序），时间复杂度为 O(n)。
+// - 空间复杂度: O(1)。这是一个原地排序算法。
+// - 稳定性: 稳定。相等的元素不会改变它们的相对顺序。
 func bubbleSort(arr []int) {
 	if arr == nil || len(arr) < 2 {
 		return
 	}
-	// 外层循环：控制比较的右边界，从len(arr)-1递减到1
 	for e := len(arr) - 1; e > 0; e-- {
-		// 内层循环：0~e-1 两两比较，大的元素往后冒泡
+		swapped := false // 交换标志位
 		for i := 0; i < e; i++ {
 			if arr[i] > arr[i+1] {
-				swap(arr, i, i+1)
+				arr[i], arr[i+1] = arr[i+1], arr[i]
+				swapped = true
 			}
+		}
+		if !swapped {
+			break
 		}
 	}
 }

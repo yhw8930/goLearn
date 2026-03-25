@@ -1,6 +1,6 @@
 module goLearn
 
-go 1.13
+go 1.22
 
 require (
 	fyne.io/fyne v1.2.3

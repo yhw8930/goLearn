@@ -4,18 +4,22 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: tet trae">
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code01_selectionSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code02_bubbleSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code03_insertSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code04_bsExist.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code05_bsNearLeft.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code05_bsNearRight.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code06_bsAwesome.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code07_sumOfFactorial.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code08_rangeSum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/classs01/code09_printBinary.go" afterDir="false" />
+    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 1">
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class02/code01_swap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class02/code02_evenTimesOddTimes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class02/code03_km.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code01_selectionSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code01_selectionSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code02_bubbleSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code02_bubbleSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code03_insertSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code03_insertSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code04_bsExist.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code04_bsExist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code05_bsNearLeft.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code05_bsNearLeft.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code05_bsNearRight.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code05_bsNearRight.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code06_bsAwesome.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code06_bsAwesome.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code07_sumOfFactorial.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code07_sumOfFactorial.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code08_rangeSum.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code08_rangeSum.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/classs01/code09_printBinary.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class01/code09_printBinary.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,11 @@
     "Go Build.go build goLearn/Algorithm/lession_basic/class01.executor": "Run",
     "Go Build.go build goLearn/Algorithm/lession_basic/class02 (1).executor": "Run",
     "Go Build.go build goLearn/Algorithm/lession_basic/class02.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class02.executor": "Run",
     "Go Build.go build goLearn/algorithm/lession/classs01 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01 (2).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01 (3).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01 (4).executor": "Run",
     "Go Build.go build goLearn/algorithm/lession/classs01.executor": "Run",
     "Go Build.go build goLearn/algorithm/lession_basic/class03 (1).executor": "Run",
     "Go Build.go build goLearn/algorithm/lession_basic/class03 (2).executor": "Run",
@@ -102,6 +110,7 @@
       <recent name="$PROJECT_DIR$/Algorithm/lession_basic/class01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm/lession/class02" />
       <recent name="$PROJECT_DIR$/algorithm/lession/classs01" />
       <recent name="$PROJECT_DIR$/Algorithm/lession_basic" />
       <recent name="$PROJECT_DIR$/gin/router_static" />
@@ -1280,43 +1289,25 @@
         <entry key="GoApplicationRunConfiguration">
           <value>
             <map>
-              <entry key="go build goLearn/algorithm/lession/classs01" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class02" value="STOPPED" />
               <entry key="go build goLearn/algorithm/lession/classs01 (1)" value="FAILED" />
-              <entry key="go build goLearn/algorithm/lession_basic/class03" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession_basic/class03 (1)" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession_basic/class03 (2)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/classs01 (2)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/classs01 (3)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/classs01 (4)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build goLearn/algorithm/lession/classs01 (1)">
-    <configuration name="go build goLearn/algorithm/lession_basic/class03 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build goLearn/algorithm/lession/class02">
+    <configuration name="go build goLearn/algorithm/lession/class02" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession_basic/class03" />
+      <package value="goLearn/algorithm/lession/class02" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession_basic/class03/bsNearLeft.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build goLearn/algorithm/lession_basic/class03 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goLearn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="goLearn/algorithm/lession_basic/class03" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession_basic/class03/code04_bsAwesome.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build goLearn/algorithm/lession_basic/class03" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="goLearn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="goLearn/algorithm/lession_basic/class03" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession_basic/class03/binarySearch.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class02/code03_km.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build goLearn/algorithm/lession/classs01 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -1328,22 +1319,40 @@
       <filePath value="$PROJECT_DIR$/algorithm/lession/classs01/code02_bubbleSort.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/classs01" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/classs01 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="goLearn/algorithm/lession/classs01" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/classs01/code01_selectionSort.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/classs01/code03_insertSort.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/classs01 (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="goLearn/algorithm/lession/classs01" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/classs01/code10_swap.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/classs01 (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="goLearn/algorithm/lession/classs01" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/classs01/code11_evenTimesOddTimes.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class02" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/classs01 (4)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/classs01 (3)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/classs01 (2)" />
         <item itemvalue="Go Build.go build goLearn/algorithm/lession/classs01 (1)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/classs01" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession_basic/class03 (2)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession_basic/class03 (1)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession_basic/class03" />
       </list>
     </recent_temporary>
   </component>
@@ -1400,7 +1409,8 @@
     <MESSAGE value="go gin study" />
     <MESSAGE value="gin study" />
     <MESSAGE value="feat: tet trae" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: tet trae" />
+    <MESSAGE value="feat: class 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: class 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
