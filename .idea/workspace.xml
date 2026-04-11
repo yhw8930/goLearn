@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 2">
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code01_reverseList.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code02_deleteGivenValue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code03_doubleEndsQueueToStackAndQueue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code04_ringArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code05_getMinStack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code06_twoStacksImplementQueue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code07_twoQueueImplementQueue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code08_getMax.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class03/code09_hashMapAndSortedMap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
+    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 3">
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class04/code01_mergeSort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class04/code02_smallSum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class04/code03_reversePair.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class04/code04_biggerThanRightTwice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class05/Code03_quickSortRecursiveAndUnrecursive.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class05/code01_countOfRangeSum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class05/code02_partitionAndQuickSort.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,53 +60,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go Application&quot;,
-    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class01 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class01 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class01.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class02 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class02.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/class02.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/class03 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/class03 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/class03 (3).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/class03 (4).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/class03 (5).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/class03.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (3).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (4).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession/classs01.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession_basic/class03 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession_basic/class03 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/algorithm/lession_basic/class03.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/test (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build goLearn/trae.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build goLearn/test (1).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.analysis.ui.options.defaults&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yhw&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go Application",
+    "Go Build.go build goLearn/Algorithm/lession_basic/class01 (1).executor": "Run",
+    "Go Build.go build goLearn/Algorithm/lession_basic/class01 (2).executor": "Run",
+    "Go Build.go build goLearn/Algorithm/lession_basic/class01.executor": "Run",
+    "Go Build.go build goLearn/Algorithm/lession_basic/class02 (1).executor": "Run",
+    "Go Build.go build goLearn/Algorithm/lession_basic/class02.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class02.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class03 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class03 (2).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class03 (3).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class03 (4).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class03 (5).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class03.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class04 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class04 (2).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class04 (3).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class04.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class05 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class05.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01 (2).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01 (3).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01 (4).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/classs01.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession_basic/class03 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession_basic/class03 (2).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession_basic/class03.executor": "Run",
+    "Go Build.go build goLearn/test (1).executor": "Run",
+    "Go Build.go build goLearn/trae.executor": "Run",
+    "Go 构建.go build goLearn/test (1).executor": "Run",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/yhw",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Algorithm/lession_basic/class01" />
@@ -1292,69 +1297,69 @@
         <entry key="GoApplicationRunConfiguration">
           <value>
             <map>
-              <entry key="go build goLearn/algorithm/lession/class03 (2)" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession/class03 (3)" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession/class03 (4)" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession/class03 (5)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class04 (1)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class04 (2)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class04 (3)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class05" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build goLearn/algorithm/lession/class03">
-    <configuration name="go build goLearn/algorithm/lession/class03 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build goLearn/algorithm/lession/class05 (1)">
+    <configuration name="go build goLearn/algorithm/lession/class04 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class03" />
+      <package value="goLearn/algorithm/lession/class04" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class03/code03_doubleEndsQueueToStackAndQueue.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class04/code02_smallSum.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class03 (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class04 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class03" />
+      <package value="goLearn/algorithm/lession/class04" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class03/code05_getMinStack.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class04/code03_reversePair.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class03 (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class04 (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class03" />
+      <package value="goLearn/algorithm/lession/class04" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class03/code06_twoStacksImplementQueue.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class04/code04_biggerThanRightTwice.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class03 (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class05 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class03" />
+      <package value="goLearn/algorithm/lession/class05" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class03/code08_getMax.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class05/Code03_quickSortRecursiveAndUnrecursive.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class03" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class05" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class03" />
+      <package value="goLearn/algorithm/lession/class05" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class03/code09_hashMapAndSortedMap.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class05/code02_partitionAndQuickSort.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class03" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class03 (5)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class03 (4)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class03 (3)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class03 (2)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class05 (1)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class05" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class04 (3)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class04 (2)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class04 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1395,7 +1400,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -1413,7 +1430,8 @@
     <MESSAGE value="feat: tet trae" />
     <MESSAGE value="feat: class 1" />
     <MESSAGE value="feat: class 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: class 2" />
+    <MESSAGE value="feat: class 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: class 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
