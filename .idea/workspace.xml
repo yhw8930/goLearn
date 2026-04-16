@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 5">
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class06/code01_comparator.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class06/code02_heap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class06/code03_heapSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class06/code04_sortArrayDistanceLessK.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class06/heap.go" afterDir="false" />
+    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 6">
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class07/code01_coverMax.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class07/code02_everyStepShowBoss.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class07/heapGreater.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class08/code01_trieTree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class08/code02_trieTree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class08/code03_countSort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class08/code04_radixSort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class09/code01_linkedListMid.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class09/code02_isPalindromeList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class09/code03_smallerEqualBigger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class09/code04_copyListWithRandom.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class10/code03_unRecursiveTraversalBT.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="207" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +54,10 @@
 }</component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -80,6 +94,17 @@
     "Go Build.go build goLearn/algorithm/lession/class06 (1).executor": "Run",
     "Go Build.go build goLearn/algorithm/lession/class06 (2).executor": "Run",
     "Go Build.go build goLearn/algorithm/lession/class06.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class07 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class07.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class08 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class08 (2).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class08.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class09 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class09 (2).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class09 (3).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class09.executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class10 (1).executor": "Run",
+    "Go Build.go build goLearn/algorithm/lession/class10.executor": "Run",
     "Go Build.go build goLearn/algorithm/lession/classs01 (1).executor": "Run",
     "Go Build.go build goLearn/algorithm/lession/classs01 (2).executor": "Run",
     "Go Build.go build goLearn/algorithm/lession/classs01 (3).executor": "Run",
@@ -93,6 +118,7 @@
     "Go 构建.go build goLearn/test (1).executor": "Run",
     "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
     "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -117,11 +143,11 @@
       <recent name="$PROJECT_DIR$/Algorithm/lession_basic/class01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm/lession" />
       <recent name="$PROJECT_DIR$/algorithm/lession/class02" />
       <recent name="$PROJECT_DIR$/algorithm/lession/classs01" />
       <recent name="$PROJECT_DIR$/Algorithm/lession_basic" />
       <recent name="$PROJECT_DIR$/gin/router_static" />
-      <recent name="$PROJECT_DIR$/crawler" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1296,70 +1322,69 @@
         <entry key="GoApplicationRunConfiguration">
           <value>
             <map>
-              <entry key="go build goLearn/algorithm/lession/class05" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession/class05 (1)" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession/class06" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession/class06 (1)" value="STOPPED" />
-              <entry key="go build goLearn/algorithm/lession/class06 (2)" value="FAILED" />
+              <entry key="go build goLearn/algorithm/lession/class08" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class08 (1)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class08 (2)" value="STOPPED" />
+              <entry key="go build goLearn/algorithm/lession/class10" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build goLearn/algorithm/lession/class06">
-    <configuration name="go build goLearn/algorithm/lession/class05 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build goLearn/algorithm/lession/class10 (1)">
+    <configuration name="go build goLearn/algorithm/lession/class08 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class05" />
+      <package value="goLearn/algorithm/lession/class08" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class05/Code03_quickSortRecursiveAndUnrecursive.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class08/code03_countSort.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class05" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class08 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class05" />
+      <package value="goLearn/algorithm/lession/class08" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class05/code02_partitionAndQuickSort.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class08/code04_radixSort.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class06 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class08" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class06" />
+      <package value="goLearn/algorithm/lession/class08" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class06/code02_heap.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class08/code02_trieTree.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class06 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class10 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class06" />
+      <package value="goLearn/algorithm/lession/class10" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class06/code04_sortArrayDistanceLessK.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class10/code03_unRecursiveTraversalBT.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build goLearn/algorithm/lession/class06" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goLearn/algorithm/lession/class10" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="goLearn/algorithm/lession/class06" />
+      <package value="goLearn/algorithm/lession/class10" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/algorithm/lession/class06/code01_comparator.go" />
+      <filePath value="$PROJECT_DIR$/algorithm/lession/class10/code01_findFirstIntersectNode.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class06" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class06 (2)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class06 (1)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class05 (1)" />
-        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class05" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class10 (1)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class10" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class08 (2)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class08 (1)" />
+        <item itemvalue="Go Build.go build goLearn/algorithm/lession/class08" />
       </list>
     </recent_temporary>
   </component>
@@ -1432,7 +1457,8 @@
     <MESSAGE value="feat: class 2" />
     <MESSAGE value="feat: class 3" />
     <MESSAGE value="feat: class 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: class 5" />
+    <MESSAGE value="feat: class 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: class 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
