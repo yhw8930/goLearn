@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 15">
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class18/Code01_RobotWalk.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class18/Code02_CardsInLine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/class12-class13-二叉树学习总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/class16-class17-图与递归学习总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/study-guide.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestPoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestPoint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class18/Code01_RobotWalk.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class18/Code01_robot_walk.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class18/Code02_CardsInLine.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class18/Code02_cards_in_line.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="241" />
+    <option name="cachedIndexableFilesCount" value="257" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,7 +138,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/yhw",
+    "last_opened_file_path": "/Users/bytedance/go/src/goLearn/algorithm",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -146,6 +148,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm" />
       <recent name="$PROJECT_DIR$/Algorithm/lession_basic/class01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
