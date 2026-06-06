@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+// 题目：复制一个带 rand 指针的链表，每个节点除了 next 还有可能指向任意节点的 rand。
+// 复制结果要求新链表结构和值完全一致，但所有节点必须是新节点。
+// 核心思路：哈希表方法先建立旧节点到新节点的映射，再统一设置 next 和 rand。
+// 省空间方法把新节点插入旧节点后面，借助相邻关系设置 rand，最后拆分两条链。
+// 时间复杂度：O(N)。
+// 空间复杂度：哈希表方法 O(N)，交织链表方法 O(1)。
+
 /*
 ======================== 数据结构 ========================
 */
@@ -31,6 +38,10 @@ type code04Node struct {
 空间复杂度：O(N)
 */
 
+// copyListWithRand1 使用哈希表复制随机链表。
+// 先建立旧节点到新节点的映射，再统一连接 next 和 rand。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)，哈希表保存新旧节点映射。
 func copyListWithRand1(head *code04Node) *code04Node {
 	if head == nil {
 		return nil
@@ -85,6 +96,10 @@ Step3：
 空间复杂度：O(1)
 */
 
+// copyListWithRand2 是 O(1) 额外空间复制方法。
+// 它把复制节点插入原节点后面，借助相邻关系设置 rand，最后拆分链表。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(1)，不计新链表本身。
 func copyListWithRand2(head *code04Node) *code04Node {
 	if head == nil {
 		return nil

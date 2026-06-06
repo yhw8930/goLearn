@@ -9,11 +9,22 @@ import (
 	"time"
 )
 
+// 题目：给定多条线段，每条线段有起点和终点，求最多有多少条线段在同一区域重合。
+// 线段重合可以理解为存在某个点，被最多线段同时覆盖。
+// 核心思路：先按起点排序，从左到右扫描线段，把当前仍未结束的线段终点放入小根堆。
+// 扫描到新线段起点时，弹出所有终点小于等于该起点的线段，堆大小就是当前重合数。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)。
+
 type Line struct {
 	start int
 	end   int
 }
 
+// maxCover1 是暴力验证方法。
+// 它枚举可能的中间点，统计每个点被多少线段覆盖。
+// 时间复杂度：O(N*R)，R 为枚举点范围，适合作为暴力验证。
+// 空间复杂度：O(1)。
 func maxCover1(lines [][]int) int {
 	minVal := math.MaxInt32
 	maxVal := math.MinInt32
@@ -34,6 +45,10 @@ func maxCover1(lines [][]int) int {
 	return cover
 }
 
+// maxCover2 是堆优化方法。
+// 它按起点扫描线段，用小根堆维护当前还没结束的线段终点。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)，小根堆保存未结束线段。
 func maxCover2(m [][]int) int {
 	lines := make([]Line, len(m))
 	for i := 0; i < len(m); i++ {

@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+// 题目：实现前缀树，支持字符串插入、删除、完整单词出现次数查询、前缀数量查询。
+// 每个节点表示一个前缀路径，pass 记录有多少字符串经过该节点，end 记录有多少字符串在该节点结束。
+// 核心思路：插入时沿字符路径创建节点并增加 pass，最后增加 end。
+// 删除前先确认单词存在，再沿路径减少 pass，某个节点 pass 变成 0 时可以直接断开后续路径。
+// 时间复杂度：Insert/Search/Delete/PrefixNumber 都是 O(L)，L 为字符串长度。
+// 空间复杂度：O(字符集大小 * 节点数)。
+
 /*
 ======================== 数据结构 ========================
 */
@@ -41,6 +48,10 @@ type Trie1 struct {
 	root *Node1
 }
 
+// NewTrie1 创建数组孩子表版本的前缀树。
+// 它适合字符集固定为小写字母的场景。
+// 时间复杂度：构造 O(1)，每次操作 O(L)，L 为字符串长度。
+// 空间复杂度：O(26*节点数)。
 func NewTrie1() *Trie1 {
 	return &Trie1{root: &Node1{}}
 }
@@ -142,6 +153,10 @@ type Trie2 struct {
 	root *Node2
 }
 
+// NewTrie2 创建哈希表孩子表版本的前缀树。
+// 它更适合字符集不固定或范围较大的场景。
+// 时间复杂度：构造 O(1)，每次操作 O(L)，L 为字符串长度。
+// 空间复杂度：O(实际分支数)，比数组版更按需。
 func NewTrie2() *Trie2 {
 	return &Trie2{root: &Node2{nexts: make(map[rune]*Node2)}}
 }

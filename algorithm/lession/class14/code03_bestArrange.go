@@ -7,6 +7,13 @@ import (
 	"time"
 )
 
+// 题目：给定多个会议的开始和结束时间，同一时间只能安排一个会议，求最多能安排多少场。
+// 暴力方法枚举每场能否作为下一场会议，尝试所有合法选择。
+// 核心思路：贪心按结束时间从早到晚排序，每次选择能参加且结束最早的会议。
+// 越早结束会给后续留下越多时间，因此这个局部选择能得到最多会议数量。
+// 时间复杂度：暴力为指数级，贪心排序为 O(NlogN)。
+// 空间复杂度：暴力递归 O(N)，贪心排序视实现而定。
+
 // Program 会议结构体
 type Program struct {
 	start int
@@ -24,6 +31,10 @@ func NewMeetingArrange(programs []Program) *MeetingArrange {
 }
 
 // ==================== 方法1：暴力递归（用来验证答案）====================
+// BestArrange1 是暴力搜索版本。
+// 它枚举当前时间线下能安排的每一场会议，递归尝试所有后续安排。
+// 时间复杂度：指数级，枚举所有可行会议选择顺序。
+// 空间复杂度：O(N)，递归深度和复制数组。
 func (m *MeetingArrange) BestArrange1() int {
 	return m.process(m.programs, 0, 0)
 }
@@ -58,6 +69,10 @@ func (m *MeetingArrange) copyButExcept(programs []Program, i int) []Program {
 }
 
 // ==================== 方法2：贪心算法（最优解）====================
+// BestArrange2 是按结束时间排序的贪心版本。
+// 每次选择最早结束且不冲突的会议，为后面保留最多空间。
+// 时间复杂度：O(NlogN)，主要来自按结束时间排序。
+// 空间复杂度：O(1) 到 O(N)，取决于排序实现。
 func (m *MeetingArrange) BestArrange2() int {
 	// 按结束时间升序排序
 	sort.Slice(m.programs, func(i, j int) bool {

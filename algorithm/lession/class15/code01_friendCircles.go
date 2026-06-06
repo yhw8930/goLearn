@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+// 题目：给定学生认识关系矩阵 M，M[i][j]=1 表示 i 和 j 直接认识，求朋友圈数量。
+// 朋友圈是传递关系：A 认识 B，B 认识 C，则 A/B/C 属于同一个朋友圈。
+// 核心思路：初始每个人是一个集合，遍历矩阵上三角，把直接认识的两个人所在集合合并。
+// 最终并查集剩余集合数量就是朋友圈数量。
+// 时间复杂度：O(N^2)。
+// 空间复杂度：O(N)。
+
 // FriendCircles 结构体封装
 type FriendCircles struct {
 	parent []int

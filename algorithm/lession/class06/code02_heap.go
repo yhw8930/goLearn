@@ -7,6 +7,13 @@ import (
 	"time"
 )
 
+// 题目：手写固定容量大根堆，并用暴力结构做对数器验证。
+// 大根堆要求每个父节点都不小于它的孩子，堆顶永远是当前最大值。
+// 核心思路：插入新值时放到数组末尾，然后不断和父节点比较并向上调整。
+// 弹出最大值时用末尾元素覆盖堆顶，再从堆顶向下选择更大的孩子交换，恢复堆序。
+// 时间复杂度：Push/Pop 为 O(logN)，Peek 为 O(1)。
+// 空间复杂度：O(N)。
+
 // MyMaxHeap 自己实现的大根堆
 type MyMaxHeap struct {
 	heap     []int
@@ -14,6 +21,10 @@ type MyMaxHeap struct {
 	heapSize int
 }
 
+// NewMyMaxHeap 创建手写大根堆。
+// 它用数组保存完全二叉树结构，并用 heapSize 表示当前堆范围。
+// 时间复杂度：构造 O(1)，后续 Push/Pop 为 O(logN)。
+// 空间复杂度：O(limit)。
 func NewMyMaxHeap(limit int) *MyMaxHeap {
 	return &MyMaxHeap{
 		heap:     make([]int, limit),
@@ -87,6 +98,10 @@ type RightMaxHeap struct {
 	size  int
 }
 
+// NewRightMaxHeap 创建暴力对照堆。
+// 它每次 Pop 线性扫描最大值，用来验证大根堆实现。
+// 时间复杂度：构造 O(1)，Push 为 O(1)，Pop 为 O(N)。
+// 空间复杂度：O(limit)。
 func NewRightMaxHeap(limit int) *RightMaxHeap {
 	return &RightMaxHeap{
 		arr:   make([]int, limit),

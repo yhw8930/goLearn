@@ -8,6 +8,13 @@ import (
 	"time"
 )
 
+// 题目：一根金条要切成指定长度数组，每次切割代价等于当前被切金条长度，求最小总代价。
+// 正向切割难以贪心选择，但可以反过来看成把小段金条合并成大金条。
+// 核心思路：每次合并两块最小的金条，产生的代价最小，并把合并后的新金条继续放回集合。
+// 这就是哈夫曼编码的贪心模型，用小根堆能高效取出当前最小的两块。
+// 时间复杂度：暴力为指数级，堆贪心为 O(NlogN)。
+// 空间复杂度：O(N)。
+
 // 定义结构体，把数组包起来
 type GoldSplitter struct {
 	arr []int
@@ -19,6 +26,10 @@ func NewGoldSplitter(arr []int) *GoldSplitter {
 }
 
 // ==================== 方法1：暴力递归 ====================
+// LessMoney1 是暴力递归版本。
+// 它枚举每次合并哪两块金条，尝试所有合并顺序。
+// 时间复杂度：指数级，枚举所有合并顺序。
+// 空间复杂度：O(N)，递归深度和临时数组。
 func (g *GoldSplitter) LessMoney1() int {
 	if len(g.arr) == 0 {
 		return 0
@@ -67,6 +78,10 @@ func (h *IntHeap) Pop() interface{} {
 	return x
 }
 
+// LessMoney2 是小根堆贪心版本。
+// 每次取出当前最小的两块合并，累计代价后再放回堆。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)，小根堆保存当前金条。
 func (g *GoldSplitter) LessMoney2() int {
 	h := &IntHeap{}
 	heap.Init(h)

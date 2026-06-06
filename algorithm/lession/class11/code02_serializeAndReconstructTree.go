@@ -8,6 +8,13 @@ import (
 	"time"
 )
 
+// 题目：把二叉树序列化成线性结构，并能根据该结构重建出完全相同的树。
+// 只记录非空节点值无法唯一恢复树结构，所以必须显式记录空节点。
+// 核心思路：先序、后序或层序序列化都可以，只要反序列化时使用同一套顺序和空节点标记。
+// 重建时按序列逐项消费，遇到空标记返回 nil，遇到值则创建节点并继续构造子树。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)，用于保存序列和递归/队列结构。
+
 // 二叉树节点
 type Code02Node struct {
 	value int
@@ -36,6 +43,10 @@ func NewNode(data int) *Code02Node {
  * */
 
 // 先序序列化
+// preSerial 使用先序方式序列化。
+// 它按头、左、右顺序记录节点，并用空标记保留结构。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)，序列保存所有节点和空标记。
 func preSerial(head *Code02Node) *list.List {
 	ans := list.New()
 	pres(head, ans)
@@ -53,6 +64,10 @@ func pres(head *Code02Node, ans *list.List) {
 }
 
 // 中序序列化
+// inSerial 使用中序方式序列化。
+// 中序序列本身不适合单独反序列化，主要用于展示遍历序列化形式。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)。
 func inSerial(head *Code02Node) *list.List {
 	ans := list.New()
 	ins(head, ans)
@@ -70,6 +85,10 @@ func ins(head *Code02Node, ans *list.List) {
 }
 
 // 后序序列化
+// posSerial 使用后序方式序列化。
+// 它按左、右、头顺序记录节点，并保留空节点。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)。
 func posSerial(head *Code02Node) *list.List {
 	ans := list.New()
 	poss(head, ans)
@@ -87,6 +106,10 @@ func poss(head *Code02Node, ans *list.List) {
 }
 
 // 先序反序列化
+// buildByPreQueue 根据先序队列反序列化。
+// 每消费一个值就递归构造当前节点的左子树和右子树。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(H)，递归深度；输入队列 O(N)。
 func buildByPreQueue(prelist *list.List) *Code02Node {
 	if prelist == nil || prelist.Len() == 0 {
 		return nil
@@ -109,6 +132,10 @@ func preb(prelist *list.List) *Code02Node {
 }
 
 // 后序反序列化
+// buildByPosQueue 根据后序队列反序列化。
+// 后序反序列化通常先反转为栈，再按头、右、左的顺序恢复。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)，栈和递归消耗。
 func buildByPosQueue(poslist *list.List) *Code02Node {
 	if poslist == nil || poslist.Len() == 0 {
 		return nil
@@ -137,6 +164,10 @@ func posb(posstack *list.List) *Code02Node {
 }
 
 // 按层序列化
+// levelSerial 使用层序方式序列化。
+// 队列按层展开节点，同时记录空孩子保证结构不丢失。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)。
 func levelSerial(head *Code02Node) *list.List {
 	ans := list.New()
 	if head == nil {
@@ -167,6 +198,10 @@ func levelSerial(head *Code02Node) *list.List {
 }
 
 // 按层反序列化
+// buildByLevelQueue 根据层序队列反序列化。
+// 它按队列顺序为每个弹出的父节点依次生成左、右孩子。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)，队列保存待连接节点。
 func buildByLevelQueue(levelList *list.List) *Code02Node {
 	if levelList == nil || levelList.Len() == 0 {
 		return nil

@@ -2,6 +2,14 @@ package main
 
 import "sort"
 
+// 题目：给定无向带权图，使用 Kruskal 算法求最小生成树。
+// 最小生成树要求连接所有点且总边权最小，并且不能形成环。
+// 核心思路：把所有边按权重从小到大排序或放入小根堆。
+// 依次尝试最小边，如果边两端点不在同一集合，就加入结果并合并集合；否则跳过避免成环。
+// 前提：通常用于无向带权图。
+// 时间复杂度：O(ElogE)。
+// 空间复杂度：O(V+E)。
+
 type unionFind struct {
 	father map[*Node]*Node
 	size   map[*Node]int

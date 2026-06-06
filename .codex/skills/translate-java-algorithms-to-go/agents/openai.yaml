@@ -1,0 +1,4 @@
+interface:
+  display_name: "Translate Java Algorithms to Go"
+  short_description: "Translate this project algorithm lessons from Java to Go."
+  default_prompt: "Use this skill to translate Java algorithm lesson classes into Go under goLearn, preserving explanations and complexity notes."

@@ -5,12 +5,21 @@ import (
 	"time"
 )
 
+// 题目：求二叉树所有层中节点数量最多的一层宽度。
+// 宽度指同一层实际存在的节点个数，不包含空位置。
+// 核心思路：层序遍历时统计每层节点数，可以用 map 记录每个节点层号。
+// 也可以不用 map，用当前层最后节点和下一层最后节点两个标记判断何时层结束。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(W) 或 O(N)，取决于是否使用层号 map。
+
 type Code05_Node struct {
 	value int
 	left  *Code05_Node
 	right *Code05_Node
 }
 
+// Code05_maxWidthUseMap 用层号 map 统计最大宽度。
+// 每个节点入队时记录层号，遍历时统计当前层节点数。
 func Code05_maxWidthUseMap(head *Code05_Node) int {
 	if head == nil {
 		return 0
@@ -53,6 +62,8 @@ func Code05_maxWidthUseMap(head *Code05_Node) int {
 	return maxWidth
 }
 
+// Code05_maxWidthNoMap 不使用层号 map。
+// 它用当前层结束节点和下一层结束节点判断何时完成一层统计。
 func Code05_maxWidthNoMap(head *Code05_Node) int {
 	if head == nil {
 		return 0

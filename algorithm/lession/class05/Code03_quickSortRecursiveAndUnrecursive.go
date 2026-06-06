@@ -5,6 +5,13 @@ import (
 	"time"
 )
 
+// 题目：实现快速排序的递归版本和非递归版本。
+// 递归版本天然用系统调用栈保存待处理区间，非递归版本需要自己维护栈结构。
+// 核心思路：每次对当前区间做荷兰国旗划分，得到等于基准的一段区域。
+// 然后把左右两个未确定区间继续入栈或递归处理，直到所有区间长度小于 2。
+// 时间复杂度：随机快排期望 O(NlogN)，最坏 O(N^2)。
+// 空间复杂度：递归或显式栈期望 O(logN)。
+
 // QuickSortRecursiveUnrecursive 结构体全包，解决冲突
 type QuickSortRecursiveUnrecursive struct{}
 
@@ -42,6 +49,10 @@ func (q *QuickSortRecursiveUnrecursive) swap(arr []int, i, j int) {
 }
 
 // 快排递归版本
+// quickSort1 是递归版随机快速排序。
+// 递归调用负责保存待处理区间。
+// 时间复杂度：随机快排期望 O(NlogN)，最坏 O(N^2)。
+// 空间复杂度：期望 O(logN)，最坏 O(N)。
 func (q *QuickSortRecursiveUnrecursive) quickSort1(arr []int) {
 	if len(arr) < 2 {
 		return
@@ -66,6 +77,10 @@ type Op struct {
 }
 
 // 快排3.0 非递归版本  ✅ 栈用切片实现，不依赖任何包！
+// quickSort2 是非递归版随机快速排序。
+// 它用显式栈保存待处理区间，避免依赖系统递归栈。
+// 时间复杂度：随机快排期望 O(NlogN)，最坏 O(N^2)。
+// 空间复杂度：期望 O(logN)，最坏 O(N)，显式栈保存区间。
 func (q *QuickSortRecursiveUnrecursive) quickSort2(arr []int) {
 	if len(arr) < 2 {
 		return

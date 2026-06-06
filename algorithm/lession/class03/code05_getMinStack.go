@@ -5,12 +5,21 @@ import (
 	"fmt"
 )
 
+// 题目：实现一个栈，除了 push/pop，还能 O(1) 返回当前栈内最小值。
+// 普通栈想找最小值需要遍历所有元素。
+// 额外维护一个最小值栈，让它记录每个数据栈状态下的当前最小值。
+// 核心思路：每次压入数据时同步更新最小值栈，弹出时两个栈同步弹出。
+// 时间复杂度：Push、Pop、GetMin 都是 O(1)。
+// 空间复杂度：O(N)。
+
 // MyStack1
 type MyStack1 struct {
 	stackData *list.List
 	stackMin  *list.List
 }
 
+// NewMyStack1 使用“只在更小或相等时压入最小栈”的策略。
+// 弹出数据时，如果弹出的值等于当前最小值，最小栈也同步弹出。
 func NewMyStack1() *MyStack1 {
 	return &MyStack1{stackData: list.New(), stackMin: list.New()}
 }
@@ -42,6 +51,8 @@ type MyStack2 struct {
 	stackMin  *list.List
 }
 
+// NewMyStack2 让最小栈和数据栈保持相同长度。
+// 每次压入数据时，最小栈同步压入当前状态下的最小值。
 func NewMyStack2() *MyStack2 {
 	return &MyStack2{stackData: list.New(), stackMin: list.New()}
 }

@@ -1,5 +1,12 @@
 package main
 
+// 题目：实现一个加强堆，支持判断元素是否存在、删除任意元素、元素优先级变化后重排。
+// 普通堆只能高效处理堆顶，无法快速定位某个任意元素。
+// 核心思路：额外维护 indexMap，记录每个元素当前在堆数组中的下标。
+// 当元素变化或删除时，可以 O(logN) 从对应下标向上/向下调整，而不用线性查找。
+// 时间复杂度：Push/Pop/Remove/Resign 为 O(logN)，Contains 为 O(1)。
+// 空间复杂度：O(N)。
+
 //type HeapGreater[T any] struct {
 //	heap     []T
 //	indexMap map[any]int

@@ -6,6 +6,13 @@ import (
 	"time"
 )
 
+// 题目：用不同底层结构实现前缀树，并用暴力 map 结构做对数器。
+// 数组版适合字符集固定且较小的情况，哈希表版适合字符范围更灵活的情况。
+// 核心思路：无论底层是数组还是 map，节点都维护 pass 和 end 两类计数。
+// Search 看 end，PrefixNumber 看前缀路径最后节点的 pass，Delete 通过减少 pass 清理无用路径。
+// 时间复杂度：Insert/Search/Delete/PrefixNumber 都是 O(L)，L 为字符串长度。
+// 空间复杂度：O(节点数)，数组版和哈希表版常数不同。
+
 //
 // =======================
 // code02Trie1（数组实现）
@@ -35,6 +42,10 @@ type code02Trie1 struct {
 	root *code02Node
 }
 
+// Newcode02Trie1 创建数组孩子表版本。
+// 字符映射到固定下标，查询速度快但字符集固定。
+// 时间复杂度：构造 O(1)，每次操作 O(L)。
+// 空间复杂度：O(固定字符集大小*节点数)。
 func Newcode02Trie1() *code02Trie1 {
 	return &code02Trie1{root: &code02Node{}}
 }
@@ -182,6 +193,10 @@ type code02Trie2 struct {
 	root *code02Node2
 }
 
+// Newcode02Trie2 创建 map 孩子表版本。
+// 它用哈希表保存分支，适配更灵活的字符范围。
+// 时间复杂度：构造 O(1)，每次操作 O(L)。
+// 空间复杂度：O(实际分支数)。
 func Newcode02Trie2() *code02Trie2 {
 	return &code02Trie2{root: &code02Node2{nexts: make(map[byte]*code02Node2)}}
 }
@@ -313,6 +328,10 @@ type code02Right struct {
 	box map[string]int
 }
 
+// Newcode02Right 创建暴力 map 对照结构。
+// 它直接统计完整字符串出现次数，用来验证前缀树实现。
+// 时间复杂度：Search 为 O(1) 均摊，PrefixNumber 需要遍历所有 key。
+// 空间复杂度：O(单词种类数)。
 func Newcode02Right() *code02Right {
 	return &code02Right{box: make(map[string]int)}
 }

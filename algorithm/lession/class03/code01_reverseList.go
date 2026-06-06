@@ -5,6 +5,13 @@ import (
 	"time"
 )
 
+// 题目：分别反转单链表和双链表，返回新的头节点。
+// 单链表反转时，需要保存 next，随后把当前节点的 next 指向前一个节点。
+// 双链表除了修改 next，还要同步修改 last，让前后指针都反向。
+// 核心思路：用 pre、next 辅助遍历链表，每处理一个节点就把它接到已反转部分前面。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(1)。
+
 type Node struct {
 	value int
 	next  *Node
@@ -15,6 +22,10 @@ type DoubleNode struct {
 	last, next *DoubleNode
 }
 
+// reverseLinkedList 是单链表原地反转的标准写法。
+// pre 指向已反转部分头部，next 临时保存后续链表，逐个节点改 next 指向。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(1)。
 func reverseLinkedList(head *Node) *Node {
 	var pre, next *Node
 	for head != nil {
@@ -26,6 +37,10 @@ func reverseLinkedList(head *Node) *Node {
 	return pre
 }
 
+// reverseLinkedList2 是单链表反转的另一种变量组织方式。
+// 核心仍然是遍历时保存下一个节点，并把当前节点接到已反转链表前面。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(1)。
 func reverseLinkedList2(head *Node) *Node {
 	if head == nil || head.next == nil {
 		return head
@@ -37,6 +52,10 @@ func reverseLinkedList2(head *Node) *Node {
 	return revHead
 }
 
+// reverseDoubleList 反转双链表。
+// 每个节点既要修改 next，也要修改 last，保证两个方向的链接都被反过来。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(1)。
 func reverseDoubleList(head *DoubleNode) *DoubleNode {
 	var pre, next *DoubleNode
 	for head != nil {
@@ -50,6 +69,10 @@ func reverseDoubleList(head *DoubleNode) *DoubleNode {
 }
 
 // 单链表暴力反转测试方法（容器法）
+// testReverseLinkedList 是测试用对照实现。
+// 它把链表节点收集到数组后按反向顺序重新连接。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)，数组保存所有节点。
 func testReverseLinkedList(head *Node) *Node {
 	if head == nil {
 		return nil
@@ -68,6 +91,10 @@ func testReverseLinkedList(head *Node) *Node {
 }
 
 // 双向链表暴力反转测试方法
+// testReverseDoubleList 是双链表的测试对照实现。
+// 它借助数组重连节点，用于和原地反转版本比对。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)，数组保存所有节点。
 func testReverseDoubleList(head *DoubleNode) *DoubleNode {
 	if head == nil {
 		return nil

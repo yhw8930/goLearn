@@ -2,6 +2,14 @@ package main
 
 import "sort"
 
+// 题目：针对有向无环图，分别用 BFS 和 DFS 思路生成拓扑序。
+// BFS 版本使用入度为 0 的节点逐步解锁后继节点。
+// 核心思路：DFS 版本给每个节点计算一个排序指标，例如最大深度或可达节点总数。
+// 在 DAG 中，依赖别人更深或能到达更多节点的点应该排得更靠前。
+// 前提：有向无环图。
+// 时间复杂度：O(V+E) 到 O(V*(V+E))，取决于 DFS 统计指标和缓存方式。
+// 空间复杂度：O(V)。
+
 // DirectedGraphNode 是 LintCode 拓扑排序题常见的图节点结构。
 type DirectedGraphNode struct {
 	Label     int
@@ -10,6 +18,8 @@ type DirectedGraphNode struct {
 
 // TopSortBFS 使用入度表做拓扑排序。
 //
+// 时间复杂度：O(V+E)。
+// 空间复杂度：O(V)。
 // 时间复杂度：O(V+E)。
 // 空间复杂度：O(V)。
 func TopSortBFS(graph []*DirectedGraphNode) []*DirectedGraphNode {
@@ -53,6 +63,10 @@ type deepRecord struct {
 //
 // 时间复杂度：O(V+E+VlogV)，DFS 扫图后还要排序。
 // 空间复杂度：O(V)，缓存和递归栈。
+// TopSortDFSByDeep 使用 DFS 深度指标排序。
+// 节点能到达的最大深度越大，越应该排在前面。
+// 时间复杂度：O(V+E)，每个节点的深度记录会缓存。
+// 空间复杂度：O(V)。
 func TopSortDFSByDeep(graph []*DirectedGraphNode) []*DirectedGraphNode {
 	order := make(map[*DirectedGraphNode]deepRecord, len(graph))
 	for _, cur := range graph {
@@ -97,6 +111,10 @@ type nodesRecord struct {
 // 所以点次降序可以得到一种拓扑序。
 //
 // 时间复杂度：O(V+E+VlogV)。
+// 空间复杂度：O(V)。
+// TopSortDFSByReachableNodes 使用 DFS 可达点数量排序。
+// 节点能到达的节点数量越多，越应该排在拓扑序前面。
+// 时间复杂度：O(V+E)，每个节点的可达数量记录会缓存。
 // 空间复杂度：O(V)。
 func TopSortDFSByReachableNodes(graph []*DirectedGraphNode) []*DirectedGraphNode {
 	order := make(map[*DirectedGraphNode]nodesRecord, len(graph))

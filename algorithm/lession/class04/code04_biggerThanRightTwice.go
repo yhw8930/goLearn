@@ -5,6 +5,13 @@ import (
 	"time"
 )
 
+// 题目：统计数组中满足 i<j 且 arr[i] > 2*arr[j] 的二元组数量。
+// 这个条件比普通逆序对更强，不能只比较大小，还要比较两倍关系。
+// 核心思路：归并排序中左右区间各自有序，对每个左侧元素维护右侧窗口边界。
+// 窗口只向右移动不回退，统计完跨区间数量后再正常 merge，保证整体 O(NlogN)。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)。
+
 // BiggerThanRightTwice 大于右边两倍
 type BiggerThanRightTwice struct{}
 

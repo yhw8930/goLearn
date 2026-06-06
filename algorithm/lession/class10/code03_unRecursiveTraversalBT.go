@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+// 题目：不用递归实现二叉树先序、中序、后序遍历。
+// 递归本质依赖系统栈，非递归版本需要自己用栈保存还没处理完的节点。
+// 核心思路：先序先弹出当前节点再压右、左；中序沿左边界入栈再回弹；后序可用双栈或一个栈控制访问顺序。
+// 不同遍历的关键是决定节点什么时候打印，以及左右孩子按什么顺序入栈。
+// 时间复杂度：O(N)。
+// 空间复杂度：O(H) 到 O(N)，取决于树形和后序实现。
+
 type code03Node struct {
 	value int
 	left  *code03Node
@@ -89,6 +96,8 @@ func code03In(cur *code03Node) {
 // 【时空复杂度】
 // 时间：O(N)
 // 空间：O(N)
+// Pos1 使用两个栈实现后序遍历。
+// 第一个栈按头右左收集，第二个栈反转后得到左右头。
 func Pos1(head *code03Node) {
 	fmt.Print("pos-order: ")
 
@@ -134,6 +143,8 @@ func Pos1(head *code03Node) {
 // 【时空复杂度】
 // 时间：O(N)
 // 空间：O(N)
+// Pos2 使用一个栈实现后序遍历。
+// 它通过记录最近打印节点判断子树是否已经处理完。
 func Pos2(head *code03Node) {
 	fmt.Print("pos-order: ")
 

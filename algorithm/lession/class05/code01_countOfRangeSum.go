@@ -1,5 +1,12 @@
 package main
 
+// 题目：给定数组 nums 和范围 [lower, upper]，统计有多少个子数组累加和落在该范围内。
+// 子数组 i..j 的和可以转成前缀和 pre[j]-pre[i-1]。
+// 核心思路：问题变成对每个右侧前缀和 x，找左侧前缀和落在 [x-upper, x-lower] 的数量。
+// 在归并排序前缀和数组时，左右两段有序，可以用两个滑动窗口批量统计有效左前缀。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)。
+
 // https://leetcode.com/problems/count-of-range-sum/ 327:区间和的个数
 // 给你一个整数数组 nums 以及两个整数 lower 和 upper 。求数组中，值位于范围 [lower, upper]
 // （包含 lower 和 upper）之内的 区间和的个数 。

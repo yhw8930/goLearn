@@ -7,6 +7,13 @@ import (
 	"time"
 )
 
+// 题目：只用两个队列实现栈的 push、poll、peek。
+// 队列是先进先出，栈是后进先出，需要在弹出时找到最后入队的元素。
+// 每次 poll/peek 前，把主队列前 N-1 个元素倒入辅助队列，最后剩下的就是栈顶。
+// 核心思路：操作后交换主队列和辅助队列的角色，保持下一轮继续使用。
+// 时间复杂度：Push 为 O(1)，Poll/Peek 为 O(N)。
+// 空间复杂度：O(N)。
+
 // TwoQueueStack 两个队列实现栈
 type TwoQueueStack[T any] struct {
 	queue *list.List

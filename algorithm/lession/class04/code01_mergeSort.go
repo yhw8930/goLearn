@@ -6,9 +6,20 @@ import (
 	"time"
 )
 
+// 题目：给定一个整数数组，使用归并排序把数组排成升序。
+// 归并排序既可以递归实现，也可以用步长逐渐翻倍的方式非递归实现。
+// 核心思路：先让左右两部分各自有序，再用辅助数组把两个有序区间合并成整体有序。
+// 合并时两个指针分别指向左右区间开头，每次拷贝较小值，剩余部分直接追加。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)。
+
 type MergeSort struct{}
 
 // 递归方法实现
+// mergeSort1 是递归版归并排序入口。
+// 它把数组不断二分，左右分别排好序后再 merge。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)，辅助数组；递归栈 O(logN)。
 func (m *MergeSort) mergeSort1(arr []int) {
 	if arr == nil || len(arr) < 2 {
 		return
@@ -62,6 +73,10 @@ func (m *MergeSort) merge(arr []int, L, M, R int) {
 }
 
 // 非递归方法实现
+// mergeSort2 是非递归版归并排序入口。
+// 它用步长 mergeSize 从 1 开始翻倍，逐层合并相邻有序区间。
+// 时间复杂度：O(NlogN)。
+// 空间复杂度：O(N)，辅助数组。
 func (m *MergeSort) mergeSort2(arr []int) {
 	if arr == nil || len(arr) < 2 {
 		return

@@ -5,6 +5,13 @@ import (
 	"fmt"
 )
 
+// 题目：判断一个单链表从头到尾的值是否构成回文。
+// 回文要求正向读和反向读完全一致，但单链表不能直接从尾向前遍历。
+// 核心思路：简单方法用栈保存全部或右半部分节点，再从头对比。
+// 最优空间方法找到中点后反转右半部分，对比完成后再把链表恢复。
+// 时间复杂度：O(N)。
+// 空间复杂度：栈方法 O(N) 或 O(N/2)，原地反转方法 O(1)。
+
 // Code02Node 链表节点结构
 type Code02Node struct {
 	value int
@@ -17,6 +24,8 @@ func NewCode02Node(data int) *Code02Node {
 }
 
 // isPalindrome1 需要 O(n) 额外空间，使用栈存储全部节点
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N)。
 func isPalindrome1(head *Code02Node) bool {
 	stack := list.New()
 	cur := head
@@ -37,6 +46,8 @@ func isPalindrome1(head *Code02Node) bool {
 }
 
 // isPalindrome2 需要 O(n/2) 额外空间，只存右半部分节点
+// 时间复杂度：O(N)。
+// 空间复杂度：O(N/2)。
 func isPalindrome2(head *Code02Node) bool {
 	if head == nil || head.next == nil {
 		return true
@@ -67,6 +78,8 @@ func isPalindrome2(head *Code02Node) bool {
 }
 
 // isPalindrome3 O(1) 额外空间，原地反转右半部分链表对比
+// 时间复杂度：O(N)。
+// 空间复杂度：O(1)。
 func isPalindrome3(head *Code02Node) bool {
 	if head == nil || head.next == nil {
 		return true
