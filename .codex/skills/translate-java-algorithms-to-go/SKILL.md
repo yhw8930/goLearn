@@ -60,6 +60,8 @@ Use `/private/tmp/go-build-cache` because the default Go build cache may be outs
 
 ## Comment Requirements
 
+- Preserve problem/test links from the Java source, such as LeetCode URLs, as comments in the Go file.
+
 For each main algorithm function, include:
 
 - What problem it solves.
