@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 19">
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class20/Code01_PalindromeSubsequence.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class20/Code02_HorseJump.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class20/Code03_Coffee.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code01_MinPathSum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code02_CoinsWayEveryPaperDifferent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code03_CoinsWayNoLimit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code04_CoinsWaySameValueSamePapper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code05_BobDie.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
