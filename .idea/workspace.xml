@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 19">
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class20/Code01_PalindromeSubsequence.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class20/Code02_HorseJump.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class20/Code03_Coffee.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code01_MinPathSum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code02_CoinsWayEveryPaperDifferent.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code03_CoinsWayNoLimit.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code04_CoinsWaySameValueSamePapper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code05_BobDie.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 20~21">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1461,7 +1453,8 @@
     <MESSAGE value="feat: class 16~18" />
     <MESSAGE value="feat: comment the code" />
     <MESSAGE value="feat: class 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: class 19" />
+    <MESSAGE value="feat: class 20~21" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: class 20~21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
