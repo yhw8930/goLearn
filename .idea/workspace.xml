@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 20~21">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class22/Code01_KillMonster.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class22/Code02_MinCoinsNoLimit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class22/Code03_SplitNumber.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class23/Code01_SplitSumClosed.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class23/Code02_SplitSumClosedSizeHalf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class23/Code03_NQueens.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class24/Code01_SlidingWindowMaxArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class24/Code02_AllLessNumSubArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class24/Code03_GasStation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class24/Code04_MinCoinsOnePaper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codex/skills/translate-java-algorithms-to-go/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.codex/skills/translate-java-algorithms-to-go/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class21/Code02_CoinsWayEveryPaperDifferent.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code02_CoinsWayEveryPaperDifferent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class21/Code03_CoinsWayNoLimit.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code03_CoinsWayNoLimit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class21/Code04_CoinsWaySameValueSamePapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class21/Code04_CoinsWaySameValueSamePapper.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

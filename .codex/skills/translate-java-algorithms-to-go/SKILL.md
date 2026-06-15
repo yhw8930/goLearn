@@ -7,7 +7,7 @@ description: Translate Java algorithm lesson code from /Users/yhw/IdeaProjects/a
 
 ## Overview
 
-Translate Java algorithm course classes into idiomatic Go files for this repo while preserving the lesson structure. Add concise Chinese explanations and time/space complexity comments for each algorithm.
+Translate Java algorithm course classes into idiomatic Go files for this repo while preserving the lesson structure. Add clear Chinese problem statements, algorithm ideas, and time/space complexity comments for each algorithm.
 
 ## Project Paths
 
@@ -34,7 +34,7 @@ and write Go files into:
 3. Create the destination `classXX` folder if missing.
 4. Translate each Java file into a corresponding Go file.
 5. Keep shared structures in focused files when multiple algorithms need them, for example `graph.go`.
-6. Add Chinese comments explaining the core idea and complexity.
+6. Add Chinese comments explaining the problem statement, core idea, and complexity.
 7. Run `gofmt` on changed Go files.
 8. Run a scoped compile check:
 
@@ -49,7 +49,7 @@ Use `/private/tmp/go-build-cache` because the default Go build cache may be outs
 - Use `package main`, matching the existing lesson folders.
 - Prefer exported function names for algorithm entry points, such as `Dijkstra1`, `Hanoi2`, `Permutation3`.
 - When translating or updating a single Java lesson file, preserve the Java `main` example as a Go `func main()` so the user can directly run that file with `go run path/to/File.go`.
-- Add a concise Chinese problem statement comment immediately above `func main()`, describing the input, constraints, and required output.
+- Add a clear Chinese problem statement comment near the top of each Go file, usually above the first exported algorithm function. If preserving a Java `main`, also add a concise problem statement above `func main()`.
 - When translating a whole lesson folder, be aware that multiple `main` functions in the same `package main` prevent package-level `go test`; still keep per-file runnable examples when the Java source has `main`, and validate individual files when needed.
 - Avoid generic package-level helper names such as `dp`, `process`, `f`, or `g` in lesson folders with multiple files. Prefix them with the problem name, for example `knapsackDP`, `knapsackProcess`, or `convertToLetterStringDP`, so files in the same package do not collide.
 - Use Go slices as stacks/queues unless a standard library heap is clearly useful.
@@ -61,6 +61,10 @@ Use `/private/tmp/go-build-cache` because the default Go build cache may be outs
 ## Comment Requirements
 
 - Preserve problem/test links from the Java source, such as LeetCode URLs, as comments in the Go file.
+- Problem statements should be more detailed than a one-line summary. This course follows 左程云算法课 style, so prefer describing the actual scenario, inputs, rules/constraints, and required return value in plain Chinese.
+- Do not be limited to exact Java comments. Use the Java class name, method names, parameters, existing comments, and algorithm logic to reasonably reconstruct a complete, easy-to-understand statement.
+- The statement should be understandable without opening the Java file. For example, clarify whether coins are unlimited, every paper is different, same-value papers are considered identical, a matrix path can only move right/down, a horse moves on a 10*9 Chinese chess board, or a process returns an impossible marker such as `-1`/`math.MaxInt`.
+- Keep it practical: one short paragraph or a few comment lines is enough, but it must let a reader know what the problem is before reading the recurrence.
 
 For each main algorithm function, include:
 

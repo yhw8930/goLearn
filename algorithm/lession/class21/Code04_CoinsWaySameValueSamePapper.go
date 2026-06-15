@@ -24,8 +24,9 @@ func coinsWaySameValueSamePapperGetInfo(arr []int) coinsWaySameValueSamePapperIn
 	return coinsWaySameValueSamePapperInfo{coins: coins, zhangs: zhangs}
 }
 
-// CoinsWaySameValueSamePapper 返回使用 arr 中纸币正好组成 aim 的方法数。
-// 相同面值的纸币认为没有区别，先统计每种面值的张数，再递归枚举每种面值使用几张。多重背包求方案数，2585
+// CoinsWaySameValueSamePapper 返回使用 arr 中纸币正好组成 aim 的方法数。多重背包（每种面值数量有限）求方案数，2585
+// 给定一个数组 arr，数组中的元素代表若干张纸币，同面值纸币视为相同面值但数量有限。例如 arr=[1,1,1,2,2,5] 表示有
+// 3 张 1 元、2 张 2 元和 1 张 5 元。给定目标金额 aim，求组成 aim 的方法数。
 //
 // 时间复杂度：O(aim^K) 量级，K 是不同面值数量。
 // 空间复杂度：O(K)，递归调用栈深度。
