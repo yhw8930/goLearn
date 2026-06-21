@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 24">
-      <change afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/LeetCode题号索引.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part1_class01-04.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part2_class05-08.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part3_class09-11.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part4_class12-14.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part5_class15-18.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part6_class19-23.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part7_class24-28.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part8_class29-33.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/part9_class34-37.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/算法复习文档.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/复习文档/算法逐题精讲.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/skills/translate-java-algorithms-to-go/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code01_MonotonousStack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code02_AllTimesMinToMax.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code03_LargestRectangleInHistogram.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code04_MaximalRectangle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code05_CountSubmatricesWithAllOnes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class26/Code01_SumOfSubarrayMinimums.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class26/Code02_FibonacciProblem.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class26/Code03_ZeroLeftOneStringNumber.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
