@@ -10,9 +10,9 @@ type CBTNode struct {
 	Left, Right *CBTNode
 }
 
-// IsCBT1 判断一棵二叉树是否为完全二叉树：除最后一层外其余层必须满，最后一层的节点从左向右连续。
-// 层序遍历时，一旦遇到孩子不双全的节点，之后出现的节点都必须是叶节点；任何节点都不能只有右孩子。
-// 时间复杂度：O(N)。空间复杂度：O(W)，W 为树的最大宽度。
+// IsCBT1 判断二叉树是否为完全二叉树：除最后一层外都满，最后一层节点从左到右连续排列。
+// 层序遍历中，节点不能只有右孩子；遇到第一个孩子不双全的节点后，后续节点必须全是叶节点。
+// 时间复杂度：O(N)。空间复杂度：O(W)，W 为最大宽度。
 func IsCBT1(head *CBTNode) bool {
 	if head == nil {
 		return true
@@ -45,9 +45,9 @@ type cbtInfo struct {
 	height int
 }
 
-// IsCBT2 使用二叉树递归套路判断完全二叉树。
-// 每棵子树返回“是否满、是否完全、高度”，再枚举以当前节点为根时能够组成完全二叉树的四种形态。
-// 时间复杂度：O(N)。空间复杂度：O(H)，H 为树高。
+// IsCBT2 用递归信息判断完全二叉树。
+// 每棵子树返回是否为满二叉树、是否为完全二叉树和高度，再枚举可以组成完全二叉树的四种左右形态。
+// 时间复杂度：O(N)。空间复杂度：O(H)。
 func IsCBT2(head *CBTNode) bool { return cbtProcess(head).isCBT }
 
 func cbtProcess(x *CBTNode) cbtInfo {
@@ -74,7 +74,7 @@ func cbtGenerate(level, maxLevel, maxValue int) *CBTNode {
 	return head
 }
 
-// main 随机生成二叉树，对比层序遍历和递归信息两种完全二叉树判定方法。
+// main 随机生成二叉树，对比层序遍历和递归信息两种判定方法。
 func main() {
 	for i := 0; i < 10000; i++ {
 		head := cbtGenerate(1, 5, 100)

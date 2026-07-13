@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d5bf57-4138-4c74-927c-3682f441b212" name="Default Changelist" comment="feat: class 24">
-      <change afterPath="$PROJECT_DIR$/.claude/skills/translate-java-algorithms-to-go/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code01_MonotonousStack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code02_AllTimesMinToMax.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code03_LargestRectangleInHistogram.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code04_MaximalRectangle.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class25/Code05_CountSubmatricesWithAllOnes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class26/Code01_SumOfSubarrayMinimums.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class26/Code02_FibonacciProblem.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/lession/class26/Code03_ZeroLeftOneStringNumber.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.codex/skills/explain/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.codex/skills/explain/agents/openai.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class13/code01_isCBT.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class13/code02_maxSubBSTHead.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class13/code03_lowestAncestor.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/lession/class13/code04_maxHappy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class12/code01_isCBT.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class12/code01_isCBT.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class12/code02_isBST.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class12/code02_isBST.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class12/code03_isBalanced.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class12/code03_isBalanced.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class12/code04_isFull.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class12/code04_isFull.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class12/code05_maxSubBSTSize.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class12/code05_maxSubBSTSize.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class12/code06_maxDistance.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class12/code06_maxDistance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/lession/class13/code05_lowestLexicography.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/lession/class13/code05_lowestLexicography.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +28,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="927" />
+    <option name="cachedIndexableFilesCount" value="948" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,6 +66,65 @@
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.2591706187973917" />
+      <entry key="MS500" value="4.209435827363979" />
+      <entry key="S2" value="8.216424254728928" />
+      <entry key="S5" value="10.064681707584858" />
+      <entry key="S10" value="10.927435976911328" />
+      <entry key="S30" value="11.614154253499937" />
+      <entry key="S60" value="11.803157153966392" />
+      <entry key="M2" value="11.900567189227788" />
+      <entry key="M5" value="11.959979989868797" />
+      <entry key="M10" value="11.979948495475298" />
+      <entry key="M15" value="11.986623081945615" />
+      <entry key="M30" value="11.993306926618711" />
+      <entry key="H1" value="11.996966165729022" />
+      <entry key="H2" value="12.041721914958464" />
+      <entry key="H4" value="12.509655620086301" />
+      <entry key="D1" value="18.30661381634437" />
+      <entry key="W1" value="63.18307246136157" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="2.8628085282005403E-249" />
+      <entry key="M30" value="5.35052196351023E-125" />
+      <entry key="H1" value="7.314726217371526E-63" />
+      <entry key="H2" value="8.552617270386609E-32" />
+      <entry key="H4" value="2.9244858129911656E-16" />
+      <entry key="D1" value="0.0025763701167866686" />
+      <entry key="W1" value="0.4267210197190674" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.231850442429699" />
+      <entry key="MS500" value="4.175142310424752" />
+      <entry key="S2" value="8.19246326628163" />
+      <entry key="S5" value="10.045115949247613" />
+      <entry key="S10" value="10.913873345765873" />
+      <entry key="S30" value="11.608408466924086" />
+      <entry key="S60" value="11.80009926331479" />
+      <entry key="M2" value="11.89898923749498" />
+      <entry key="M5" value="11.959336677576472" />
+      <entry key="M10" value="11.979624785815151" />
+      <entry key="M15" value="11.986406816802788" />
+      <entry key="M30" value="11.993198564101702" />
+      <entry key="H1" value="11.996911926489759" />
+      <entry key="H2" value="12.041694754657772" />
+      <entry key="H4" value="12.509641893939396" />
+      <entry key="D1" value="18.309187472295907" />
+      <entry key="W1" value="63.60978948275764" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -70,87 +136,87 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go Application",
-    "Go Build.go build goLearn/Algorithm/lession_basic/class01 (1).executor": "Run",
-    "Go Build.go build goLearn/Algorithm/lession_basic/class01 (2).executor": "Run",
-    "Go Build.go build goLearn/Algorithm/lession_basic/class01.executor": "Run",
-    "Go Build.go build goLearn/Algorithm/lession_basic/class02 (1).executor": "Run",
-    "Go Build.go build goLearn/Algorithm/lession_basic/class02.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class02.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class03 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class03 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class03 (3).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class03 (4).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class03 (5).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class03.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class04 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class04 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class04 (3).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class04.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class05 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class05.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class06 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class06 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class06.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class07 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class07.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class08 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class08 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class08.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class09 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class09 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class09 (3).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class09.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class10 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class10.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class11.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class13.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class14 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class14 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class14 (3).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class14.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class15 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class15 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class15.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class18 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class18.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/class19.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/classs01 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/classs01 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/classs01 (3).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/classs01 (4).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession/classs01.executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession_basic/class03 (1).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession_basic/class03 (2).executor": "Run",
-    "Go Build.go build goLearn/algorithm/lession_basic/class03.executor": "Run",
-    "Go Build.go build goLearn/test (1).executor": "Run",
-    "Go Build.go build goLearn/test.executor": "Run",
-    "Go Build.go build goLearn/trae.executor": "Run",
-    "Go 构建.go build goLearn/test (1).executor": "Run",
-    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
-    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/yhw/go/src/goLearn/algorithm",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "ml.llm.AcpAgentsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go Application&quot;,
+    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class01 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class01 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class01.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class02 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/Algorithm/lession_basic/class02.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class02.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class03 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class03 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class03 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class03 (4).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class03 (5).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class03.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class04 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class04 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class04 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class04.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class05 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class05.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class06 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class06 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class06.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class07 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class07.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class08 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class08 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class08.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class09 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class09 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class09 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class09.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class10 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class10.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class11.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class13.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class14 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class14 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class14 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class14.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class15 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class15 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class15.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class18 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class18.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/class19.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/classs01 (4).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession/classs01.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession_basic/class03 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession_basic/class03 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/algorithm/lession_basic/class03.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/test (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/test.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build goLearn/trae.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build goLearn/test (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.analysis.ui.options.defaults&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yhw/go/src/goLearn/algorithm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/algorithm" />
@@ -1333,6 +1399,132 @@
     </option>
   </component>
   <component name="RunManager" selected="Go Build.go build goLearn/algorithm/lession/class19">
+    <configuration name="go build goLearn/algorithm/lession/class01" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class01" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class01" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class02" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class02" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class02" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class03" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class03" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class03" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class04" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class04" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class04" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class05" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class05" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class05" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class06" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class06" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class06" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class07" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class07" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class07" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class08" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class08" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class08" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class09" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class09" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class09" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class10" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class10" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class10" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class11" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class11" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class11" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class12" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class12" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class12" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class13" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class13" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class13" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class14" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class14" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class14" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build goLearn/algorithm/lession/class15 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -1340,6 +1532,15 @@
       <package value="goLearn/algorithm/lession/class15" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/algorithm/lession/class15/code03_numberOfIslandsII.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class15" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class15" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class15" />
       <method v="2" />
     </configuration>
     <configuration name="go build goLearn/algorithm/lession/class18 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -1351,6 +1552,15 @@
       <filePath value="$PROJECT_DIR$/algorithm/lession/class18/Code01_RobotWalk.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class18 (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class18" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class18" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build goLearn/algorithm/lession/class18" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -1358,6 +1568,15 @@
       <package value="goLearn/algorithm/lession/class18" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/algorithm/lession/class18/Code02_CardsInLine.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/algorithm/lession/class19 (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/algorithm/lession/class19" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/algorithm/lession/class19" />
       <method v="2" />
     </configuration>
     <configuration name="go build goLearn/algorithm/lession/class19" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -1369,6 +1588,420 @@
       <filePath value="$PROJECT_DIR$/algorithm/lession/class19/Code01_Knapsack.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build goLearn/basic/atomic" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/basic/atomic" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/basic/atomic" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/basic/basic" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/basic/basic" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/basic/basic" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/basic/branch" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/basic/branch" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/basic/branch" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/basic/func" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/basic/func" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/basic/func" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/basic/loop" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/basic/loop" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/basic/loop" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/basic/regex" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/basic/regex" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/basic/regex" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/channel" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/channel" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/channel" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/channel/done" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/channel/done" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/channel/done" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/channel/select" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/channel/select" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/channel/select" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/chapter1" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/chapter1" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/chapter1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/container/arrays" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/container/arrays" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/container/arrays" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/container/maps" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/container/maps" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/container/maps" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/container/nonrepeatingsubstr" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/container/nonrepeatingsubstr" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/container/nonrepeatingsubstr" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/container/slices" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/container/slices" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/container/slices" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/container/strings" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/container/strings" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/container/strings" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/crawler" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/crawler" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/crawler" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/errhandling/defer" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/errhandling/defer" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/errhandling/defer" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/errhandling/filelisteningserver" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/errhandling/filelisteningserver" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/errhandling/filelisteningserver" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/errhandling/recover" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/errhandling/recover" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/errhandling/recover" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/functional" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/functional" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/functional" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/functional/adder" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/functional/adder" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/functional/adder" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/middleware" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/middleware" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/middleware" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/middleware_whiteliat" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/middleware_whiteliat" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/middleware_whiteliat" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/other_autotis" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/other_autotis" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/other_autotis" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/other_shutdown" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/other_shutdown" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/other_shutdown" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/other_template" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/other_template" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/other_template" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/param_body" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/param_body" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/param_body" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/param_get" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/param_get" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/param_get" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/param_struct" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/param_struct" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/param_struct" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/router_generic" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/router_generic" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/router_generic" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/router_static" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/router_static" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/router_static" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/router_type" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/router_type" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/router_type" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/router_url" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/router_url" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/router_url" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/start" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/start" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/start" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/valid_binding" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/valid_binding" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/valid_binding" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/valid_custom" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/valid_custom" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/valid_custom" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gin/valid_v9" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gin/valid_v9" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gin/valid_v9" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gorm/crud" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gorm/crud" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gorm/crud" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gorm/database" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gorm/database" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gorm/database" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/gorm/quickstart" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/gorm/quickstart" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/gorm/quickstart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/http" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/http" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/http" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/maze" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/maze" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/maze" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/queue/queueentry" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/queue/queueentry" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/queue/queueentry" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/retriever" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/retriever" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/retriever" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/stdlib" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/stdlib" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/stdlib" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/test (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/test" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/test" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build goLearn/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goLearn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -1376,6 +2009,33 @@
       <package value="goLearn/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/test/TestPoint.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/test/pic" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/test/pic" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/test/pic" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/trae" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/trae" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/trae" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build goLearn/tree/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goLearn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goLearn/tree/entry" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/tree/entry" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -1403,8 +2063,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-72a9cf600ed8-3105c3b11fe0-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-261.22158.291" />
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-GO-261.22158.291" />
+        <option value="bundled-gosdk-72a9cf600ed8-3dd3895e5e08-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-261.26222.72" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-GO-261.26222.72" />
       </set>
     </attachedChunks>
   </component>

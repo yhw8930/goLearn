@@ -1,149 +1,95 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"sort"
 	"strings"
-	"time"
 )
 
-// 题目：给定字符串数组，把所有字符串拼接起来，要求最终结果字典序最小。
-// 暴力方法可以枚举所有排列，但字符串数量稍大时阶乘复杂度不可接受。
-// 核心思路：定义排序规则，如果 a+b 的字典序小于 b+a，就让 a 排在 b 前面。
-// 这个比较规则能保证局部相邻顺序最优，从而得到整体最小拼接结果。
-// 时间复杂度：暴力为 O(N!)；贪心排序为 O(NlogN * K)，K 为拼接比较长度。
-// 空间复杂度：排序和拼接结果需要 O(N*K)。
-
-// ---------------------- 暴力解法（全排列）----------------------
-// lowestString1 是暴力枚举方法。
-// 它生成所有字符串排列并取字典序最小结果，适合验证贪心。
-// 时间复杂度：O(N!*N*K)，K 为字符串平均长度。
-// 空间复杂度：O(N!*N*K)，保存所有排列结果。
-func lowestString1(strs []string) string {
+// LowestString1 给定字符串数组，要求把所有字符串各使用一次并拼接，返回字典序最小的结果；空数组返回空串。
+// 暴力枚举所有排列，把完整拼接结果放入集合，再从中选出字典序最小者，适合作为对数器。
+// 时间复杂度：O(N!*L)，L 为全部字符串的总长度。空间复杂度：O(N!*L)。
+func LowestString1(strs []string) string {
 	if len(strs) == 0 {
 		return ""
 	}
-	ans := process(strs)
-	if len(ans) == 0 {
-		return ""
-	}
-	// 取最小字典序（Go map 无序，所以遍历找最小）
-	minStr := ""
+	all := lowestStringPermutations(strs)
+	ans := ""
 	first := true
-	for s := range ans {
-		if first || s < minStr {
-			minStr = s
-			first = false
+	for s := range all {
+		if first || s < ans {
+			ans, first = s, false
 		}
 	}
-	return minStr
+	return ans
 }
 
-// 递归生成全排列
-func process(strs []string) map[string]bool {
-	ans := make(map[string]bool)
+func lowestStringPermutations(strs []string) map[string]struct{} {
+	ans := make(map[string]struct{})
 	if len(strs) == 0 {
-		ans[""] = true
+		ans[""] = struct{}{}
 		return ans
 	}
-
-	for i := 0; i < len(strs); i++ {
-		first := strs[i]
-		nexts := removeIndexString(strs, i)
-		next := process(nexts)
-		for cur := range next {
-			ans[first+cur] = true
+	for i, first := range strs {
+		for rest := range lowestStringPermutations(lowestStringRemove(strs, i)) {
+			ans[first+rest] = struct{}{}
 		}
 	}
 	return ans
 }
 
-// 移除指定下标的字符串
-func removeIndexString(arr []string, index int) []string {
-	n := len(arr)
-	ans := make([]string, n-1)
-	ansIdx := 0
-	for i := 0; i < n; i++ {
-		if i != index {
-			ans[ansIdx] = arr[i]
-			ansIdx++
-		}
-	}
+func lowestStringRemove(strs []string, index int) []string {
+	ans := make([]string, 0, len(strs)-1)
+	ans = append(ans, strs[:index]...)
+	ans = append(ans, strs[index+1:]...)
 	return ans
 }
 
-// ---------------------- 贪心解法（最优）----------------------
-// 自定义排序器：a+b < b+a 则 a 排前面
-type strSlice []string
-
-func (s strSlice) Len() int      { return len(s) }
-func (s strSlice) Swap(i, j int) { s[i], s[j] = s[j], s[i] }
-func (s strSlice) Less(i, j int) bool {
-	return s[i]+s[j] < s[j]+s[i]
-}
-
-// lowestString2 是贪心排序方法。
-// 它按照 a+b 与 b+a 的比较结果排序，排序后直接拼接。
-// 时间复杂度：O(NlogN*K)，比较 a+b 和 b+a 的代价为 O(K)。
-// 空间复杂度：O(N*K)，主要为排序和拼接结果。
-func lowestString2(strs []string) string {
+// LowestString2 用贪心排序得到字典序最小的拼接结果。
+// 若 a+b < b+a，则 a 必须排在 b 前；按此比较器排序后直接拼接即可得到全局最优解。函数会修改 strs 的顺序。
+// 时间复杂度：O(N*logN*L)，L 表示一次拼接比较的最大字符数。空间复杂度：O(L)。
+func LowestString2(strs []string) string {
 	if len(strs) == 0 {
 		return ""
 	}
-	sort.Sort(strSlice(strs))
+	sort.Slice(strs, func(i, j int) bool { return strs[i]+strs[j] < strs[j]+strs[i] })
 	return strings.Join(strs, "")
 }
 
-// ---------------------- 测试工具方法 ----------------------
-func generateRandomString(strLen int) string {
-	rand.Seed(time.Now().UnixNano())
+func lowestStringRandom(strLen int) string {
 	length := rand.Intn(strLen) + 1
-	ans := make([]rune, length)
-	for i := 0; i < length; i++ {
-		value := rand.Intn(5)
-		if rand.Float64() <= 0.5 {
-			ans[i] = rune(65 + value) // 大写 A-E
+	ans := make([]byte, length)
+	for i := range ans {
+		value := byte(rand.Intn(5))
+		if rand.Float64() < 0.5 {
+			ans[i] = 'A' + value
 		} else {
-			ans[i] = rune(97 + value) // 小写 a-e
+			ans[i] = 'a' + value
 		}
 	}
 	return string(ans)
 }
 
-func generateRandomStringArray(arrLen, strLen int) []string {
-	length := rand.Intn(arrLen) + 1
-	ans := make([]string, length)
-	for i := 0; i < length; i++ {
-		ans[i] = generateRandomString(strLen)
+func lowestStringRandomArray(arrLen, strLen int) []string {
+	ans := make([]string, rand.Intn(arrLen)+1)
+	for i := range ans {
+		ans[i] = lowestStringRandom(strLen)
 	}
 	return ans
 }
 
-func copyStringArray(arr []string) []string {
-	ans := make([]string, len(arr))
-	copy(ans, arr)
-	return ans
-}
-
-// ---------------------- 主测试 ----------------------
+// main 随机生成字符串数组，对比全排列和贪心排序得到的最小字典序拼接结果。
 func main() {
-	arrLen := 6
-	strLen := 5
-	testTimes := 1000
-	rand.Seed(time.Now().UnixNano())
-
-	println("test begin")
-	for i := 0; i < testTimes; i++ {
-		arr1 := generateRandomStringArray(arrLen, strLen)
-		arr2 := copyStringArray(arr1)
-
-		res1 := lowestString1(arr1)
-		res2 := lowestString2(arr2)
-
-		if res1 != res2 {
-			println("Oops!")
+	fmt.Println("test begin")
+	for i := 0; i < 10000; i++ {
+		arr1 := lowestStringRandomArray(6, 5)
+		arr2 := append([]string(nil), arr1...)
+		if LowestString1(arr1) != LowestString2(arr2) {
+			fmt.Println(arr1)
+			fmt.Println("Oops!")
 			return
 		}
 	}
-	println("finish!")
+	fmt.Println("finish!")
 }
